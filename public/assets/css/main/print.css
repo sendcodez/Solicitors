@@ -1,0 +1,16 @@
+@media print {
+    /* Hide unnecessary elements */
+    header, .breadcrumb-header {
+        display: none;
+    }
+    /* Adjust table layout for printing */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+    
+}

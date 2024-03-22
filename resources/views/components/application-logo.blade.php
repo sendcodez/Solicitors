@@ -1,0 +1,1 @@
+<img src="{{ asset('img/seal.png') }}" alt="Your Logo" class="logo" style="width:10%;margin-left:60vh;margin-top:-10%">
