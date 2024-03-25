@@ -147,12 +147,12 @@
                         <li class="sidebar-item  ">
                                 <a href="{{ route ('solicitors.index') }} " class='sidebar-link'>
                                     <i class="bi bi-people-fill"></i>
-                                    <span>Solicitors Profiling</span>
+                                    <span>Visitors Profiling</span>
                                 </a>
                             </li>
                         <li class="sidebar-title">Solicits</li>
                             <li class="sidebar-item  ">
-                                <a href="" class='sidebar-link'>
+                                <a href="{{ route('pending.index') }}" class='sidebar-link'>
                                     <i class="bi bi-clipboard-fill"></i>
                                     <span>Pending</span>
                                 </a>

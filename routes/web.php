@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SolicitorsController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PendingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +38,11 @@ Route::get('admin.solicitors', [SolicitorsController::class, 'index'])->name('so
 Route::post('admin.solicitors', [SolicitorsController::class, 'store'])->name('solicitors.store');
 Route::put('admin/solicitors/manage_solicitors/{solicitor}', [SolicitorsController::class, 'update'])->name('solicitors.update');
 Route::delete('admin.solicitors/{solicitor}', [SolicitorsController::class, 'destroy'])->name('solicitors.destroy');
+
+Route::get('admin.pending', [PendingController::class, 'index'])->name('pending.index');
+Route::post('admin.pending', [PendingController::class, 'store'])->name('pending.store');
+Route::put('admin/pending/{pending}', [PendingController::class, 'update'])->name('pending.update');
+Route::delete('admin.pending/{pending}', [PendingController::class, 'destroy'])->name('pending.destroy');
 
 
 
